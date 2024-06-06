@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registrar Lote</title>
+  </head>
+  <body>
+    <div class="cadastro">
+      <h1>Gestão de Fazenda</h1>
+      <hr />
+      <h2>Cadastro de Lote</h2>
+      <form action="/gestaofaz/ServletLoteAdicionar" method="get">
+        <label>
+          Lote:
+          <input type="text" name="nome" />
+        </label>
+        <label>
+          Área (m²):
+          <input type="text" name="area" />
+        </label>
+        <br />
+        <input class="button" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<style>
+  .cadastro {
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  form {
+    margin: 20px;
+    text-align: left;
+  }
+
+  h2 {
+    font-weight: lighter;
+    text-align: left;
+    margin: 20px;
+  }
+
+  .button {
+    display: block;
+    margin: 20px auto;
+  }
+</style>
